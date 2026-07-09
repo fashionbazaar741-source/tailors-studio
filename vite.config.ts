@@ -1,0 +1,1 @@
+import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  plugins: [react()],\n  server: {\n    port: 5173,\n    strictPort: false\n  },\n  build: {\n    target: 'esnext',\n    minify: 'terser',\n    sourcemap: false\n  }\n})\n
